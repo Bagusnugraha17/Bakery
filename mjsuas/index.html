@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kakiang Bakery - Japanese Style Pastry & Bakery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png" sizes="32x32">
+</head>
+<body class="home">
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide-bg"></div>
+                    <div class="slide-content">
+                        <h2>Kakiang Bakery</h2>
+                        <p>Kakiang Bakery dikenal sebagai toko roti dan kue terfavorit di pulau Dewata dengan citra rasa kas Jepang sejak tahun 2000</p>
+                        <a href="products.html" class="btn">Eat Today</a>
+                    </div>
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>About us</h3>
+                    <h4>Tentang Kakiang Bakery</h4>
+                    <p>Kakiang Bakery dikenal sebagai toko roti dan kue terfavorit di pulau Dewata dengan citra rasa kas Jepang sejak tahun 2000</p>
+                    <a href="about.html" class="btn">Learn more</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/about-image.jpg" alt="Kakiang Bakery" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Outlets Section -->
+    <section class="outlets-section">
+        <div class="container">
+            <h3>Explore</h3>
+            <h4>Outlet Kami</h4>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="outlet-card">
+                        <img src="images/outlet1.jpg" alt="Kakiang Bakery & Cafe">
+                        <h5>Kakiang Bakery & Cafe</h5>
+                        <p>Jalan Raya Pengosekan. Ubud, kabupaten Gianyar</p>
+                    </div>
+                </div>
+                <!-- Add more outlet cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <h3>Services</h3>
+            <h4>What you get</h4>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="service-card">
+                        <img src="images/service1.png" alt="Online Booking">
+                        <h5>Online booking</h5>
+                        <p>Kakiang Bakery menyediakan pelayanan booking order secara online</p>
+                    </div>
+                </div>
+                <!-- Add more service cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Products/Promotion Section -->
+    <section class="products-section">
+        <div class="container">
+            <h3>Kakiang Bakery</h3>
+            <h4>Promo Item</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="product-card">
+                        <img src="images/product1.jpg" alt="Bridal Shower">
+                        <h5>BRIDAL SHOWER / BIRTHDAY PARTY</h5>
+                    </div>
+                </div>
+                <!-- Add more product cards -->
+            </div>
+            <a href="products.html" class="btn">More Promotion</a>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Get Delivery</h3>
+                    <h4>on your desired time</h4>
+                    <a href="contact.html" class="btn">Contact Us</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/delivery.jpg" alt="Delivery" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        // Load header and footer components
+        fetch('components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+
+        fetch('components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
