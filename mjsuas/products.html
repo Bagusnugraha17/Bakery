@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -67,4 +68,75 @@
             });
     </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Our Products - Kakiang Bakery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="products-page">
+    <div id="header"></div>
+    
+    <main class="page-content">
+        <section class="page-hero">
+            <div class="container">
+                <h1>Our Products</h1>
+                <p>Delicious Japanese-style pastries and bakery items</p>
+            </div>
+        </section>
+        
+        <section id="cakes" class="products-section">
+            <div class="container">
+                <h2>Cakes</h2>
+                <div class="row">
+                    <!-- Cake products will be dynamically loaded -->
+                </div>
+            </div>
+        </section>
+        
+        <section id="breads" class="products-section">
+            <div class="container">
+                <h2>Breads</h2>
+                <div class="row">
+                    <!-- Bread products -->
+                </div>
+            </div>
+        </section>
+        
+        <section id="cookies" class="products-section">
+            <div class="container">
+                <h2>Cookies & Brownies</h2>
+                <div class="row">
+                    <!-- Cookie products -->
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div id="footer"></div>
+    
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+    <script>
+        fetch('components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+
+        fetch('components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+</body>
+>>>>>>> c8be88a672a598ddd16d953252e55fc19f4d0bea
 </html>

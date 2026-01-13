@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -64,4 +65,72 @@
             });
     </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us - Kakiang Bakery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="about-page">
+    <div id="header"></div>
+    
+    <main class="page-content">
+        <section class="page-hero">
+            <div class="container">
+                <h1>About Kakiang Bakery</h1>
+                <p>Japanese Style Pastry & Bakery since 2000</p>
+            </div>
+        </section>
+        
+        <section class="about-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Our Story</h2>
+                        <p>Kakiang Bakery dikenal sebagai toko roti dan kue terfavorit di pulau Dewata dengan citra rasa kas Jepang sejak tahun 2000. Didirikan dengan passion untuk menghadirkan kualitas terbaik dengan sentuhan Jepang yang autentik.</p>
+                        
+                        <h3>Our Mission</h3>
+                        <p>Menyediakan produk bakery berkualitas tinggi dengan cita rasa unik yang memadukan teknik Jepang dengan bahan-bahan lokal terbaik.</p>
+                        
+                        <h3>Our Values</h3>
+                        <ul>
+                            <li>Quality First</li>
+                            <li>Authentic Japanese Taste</li>
+                            <li>Customer Satisfaction</li>
+                            <li>Innovation</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/about-story.jpg" alt="Our Story" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div id="footer"></div>
+    
+    <script src="js/main.js"></script>
+    <script>
+        fetch('components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+
+        fetch('components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+</body>
+>>>>>>> c8be88a672a598ddd16d953252e55fc19f4d0bea
 </html>
